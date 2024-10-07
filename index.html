@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+     
+        function turnOn() {
+           document.getElementById("lightOffBulb").src = "lightbulb.jpg";
+        }
+// indicate the path of the image by .src
+        function turnOff() {
+            document.getElementById("lightOffBulb").src = "lightoff.jpg";
+        }
+
+
+
+        
+    </script>
+
+</head>
+<style>
+ body {
+            display: flex;
+          
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+           
+        }
+        button:hover{
+            background-color: lightseagreen;
+            border-color: blue;
+        }
+        @media (max-width: 500px) {
+            .main{
+                width: 100%;
+                
+            }
+            img {
+             width: 480px;   
+          
+            }
+          
+        }
+</style>
+<body>
+    <div class="main">
+    <button onclick="turnOn()" style="font-size:25px;  ">Turn on the light</button>
+    <img id="lightOffBulb" src="lightoff.jpg" alt="Light Bulb" width="600">
+    <button onclick="turnOff()" style="font-size:25px;">Turn off the light</button>
+</div>
+   
+</body>
+</html>
